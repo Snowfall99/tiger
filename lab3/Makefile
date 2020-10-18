@@ -1,6 +1,3 @@
-lextest: driver.o lex.yy.o errormsg.o util.o
-	gcc -g -o lextest driver.o lex.yy.o errormsg.o util.o
-	
 a.out: parse.o prabsyn.o y.tab.o lex.yy.o errormsg.o util.o table.o absyn.o symbol.o
 	gcc -g parse.o prabsyn.o y.tab.o lex.yy.o errormsg.o util.o table.o absyn.o symbol.o
 
